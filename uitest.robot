@@ -14,7 +14,9 @@ ${BROWSER} =            chrome
 ${START_URL} =          https://yellow.co.nz/our-products/search-ads/
 ${SEARCH_WHAT} =        Cafe
 ${SEARCH_WHERE} =       Auckland
+# remote Selenium grid from LambdaTest
 ${COMMAND_EXECUTOR}=    https://leo.liang:fL1GyycafGz0bi45KrIsQ9KgZhQ50QoO4VoRzINoC9QUazxIlN@hub.lambdatest.com/wd/hub
+# if we want to use our local Selenium Grid just replace the url as http://10.30.20.198:4444/wd/hub
 
 *** Test Cases ***
 User can buy online products

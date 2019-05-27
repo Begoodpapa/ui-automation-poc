@@ -30,5 +30,5 @@ Get S3 Folder Names From Codebuild ID
     \   Exit for loop if    '${AWS_CODE_BUID_ID[${i}]}'==':'
     ${code_build_id}=    Get Substring    ${AWS_CODE_BUID_ID}    ${i+1}
     ${code_build_task_name}=    Get Substring    ${AWS_CODE_BUID_ID}    0    ${i}
-    Log Many    ${code_build_id}    ${code_build_task_name}
+    #Log Many    ${code_build_id}    ${code_build_task_name}
     [return]    ${code_build_id.strip()}    ${code_build_task_name.strip()}
